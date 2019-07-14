@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Board Weight Calculator </title>
+  <link rel="shortcut icon" href="favicon.jpg" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+
+
+</head>
+
+<body>
+
+
+
+  <!-- particles.js container -->
+  <div id="particles-js">
+    <div id='main' class="col-md-6 offset-md-3">
+      <h1 class="display-4 text-center mb-3">Board Weight Calculator</h1>
+      <h3 class="display-4 text-center ">Calculator</h3>
+      <form action="/">
+        <input id="broiki" type="number" placeholder="Enter Quantities" class="form-control form-control-lg"
+          required><br>
+        <input id="width" type="number" placeholder="Enter Width" class="form-control form-control-lg" required><br>
+        <input id="lenght" type="number" placeholder="Enter Lenght" class="form-control form-control-lg" required><br>
+      </form>
+
+      <select id='material' class="form-control form-control-lg">
+        <option value=''>Select Material</option>
+        <option value='B'>B Flute</option>
+        <option value='C'>C Flute</option>
+        <option value='E'>E Flute</option>
+        <option value='F'>F Flute</option>
+        <option value='G'>G Flute</option>
+        <option value='O'>O Flute</option>
+        <option value='B/C'>BC Flute</option>
+        <option value='E/B'>EB Flute</option>
+        <option value='F/E'>FE Flute</option>
+        <option value='1250micDB'>1250mic Display Board</option>
+        <option value='2000micDB'>2000mic Display Board</option>
+      </select> <br>
+
+      <button onclick="sum()" class="form-control form-control-lg">Calculate</button>
+      <div id='output'>
+        <div class="card card-primary mb-2">
+          <div class="card-block">
+            <h4>Gram:</h4>
+            <div id="grOutput">
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-success mb-2">
+          <div class="card-block">
+            <h4>Kilogram:</h4>
+            <div id="kgOutput">
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-success mb-2">
+          <div class="card-block">
+            <h4>Square metre:</h4>
+            <div id="m2">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <img src="logo.png" class="logo">
+
+
+  <!-- scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
+
+  <footer>&copy; Copyright 2019 Designed by Rumen / Background by Vincent </footer>
+
+
+</body>
+
+</html>

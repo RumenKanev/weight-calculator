@@ -1,0 +1,74 @@
+
+html,body{ 
+  height: 100%;
+  width: 100%;
+	background: #f47521ce;
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #f47721;
+}
+h1{
+  margin-top: 5%;
+  color: rgb(207, 202, 202);
+}
+
+h3{
+  display: none;
+  color: rgb(207, 202, 202)
+}
+
+#main{
+  position: absolute;
+  
+}
+
+.card-primary{
+  background-color: rgb(207, 202, 202);
+}
+.card-success{
+  background-color: rgb(207, 202, 202);
+}
+
+.card-block{
+  padding: 10px 0px 10px 10px;
+}
+
+.logo{
+  position: absolute;
+  top: 85%;
+  left: 90%;
+  height: 17%,auto;
+  width: 7%;
+} 
+
+button{
+  margin-bottom: 10px;
+}
+
+footer{
+  position: absolute;
+  top: 100%;
+  left: 30%;
+}
+
+
+@media only screen and (max-width: 900px) , screen and (max-height: 700px){
+  .logo{
+   display: none;
+  } 
+  footer{
+  display: none;
+  }
+  h1 {
+    display: none;
+ }
+ h3{
+   display: block;
+ }
+ 
+}
+
+
