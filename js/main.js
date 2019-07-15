@@ -8,8 +8,8 @@ function sum() {
     let width = document.getElementById('width').value;
     (width === '') ? alert('Please, enter Width') : '';
 
-    let lenght = document.getElementById('lenght').value;
-    (lenght === '') ? alert('Please, enter Lenght') : '';
+    let length = document.getElementById('length').value;
+    (length === '') ? alert('Please, enter Lenght') : '';
 
     let material = document.getElementById('material').value;
     (material === '') ? alert('Please, select Material') : '';
@@ -29,12 +29,12 @@ function sum() {
 
     let output = arr.filter(x => x.name === material);
     let value = output.map(x => x.value);
-    let total = (lenght * width / 1000) * qty * (value / 1000) / 1000;
+    let total = (length * width / 1000) * qty * (value / 1000) / 1000;
     let final = Math.round(total * 100) / 100;
     (final === 0) ? '' : document.getElementById('grOutput').innerHTML = final * 1000 + 'g';
     (final === 0) ? '' : document.getElementById('kgOutput').innerHTML = final + 'kg';
 
-    let m2 = lenght * width / 1000 * qty / 1000;
-    (material === '' || qty === '' || lenght === '' || width === '') ? '' : document.getElementById('m2').innerHTML = m2 + 'm2';
+    let m2 = length * width / 1000 * qty / 1000;
+    (material === '' || qty === '' || length === '' || width === '') ? '' : document.getElementById('m2').innerHTML = m2 + 'm2';
 
 }  
